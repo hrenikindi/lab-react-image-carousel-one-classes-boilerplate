@@ -1,1 +1,47 @@
 /* write your carousel css in this file */
+.my-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.my-carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.my-prev-button,
+.my-next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.my-prev-button {
+  left: 0;
+}
+
+.my-next-button {
+  right: 0;
+}
+
+.title {
+  top: 0;
+  text-align: center;
+}
+
+.subtitle {
+  bottom: 0;
+  text-align: center;
+}
